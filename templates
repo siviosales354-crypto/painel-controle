@@ -1,9 +1,0 @@
-<!DOCTYPE html>
-<html>
-<body>
-    <h1>Painel de Comando</h1>
-    <form action="/enviar" method="post">
-        <button name="comando" value="clicar">Executar Clique</button>
-    </form>
-</body>
-</html>
