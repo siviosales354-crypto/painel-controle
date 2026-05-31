@@ -25,4 +25,6 @@ def enviar():
         return f"Erro: {e}"
 
 if __name__ == '__main__':
-    app.run()
+    # CORREÇÃO: O Render define a porta pela variável de ambiente 'PORT'
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host='0.0.0.0', port=port)
